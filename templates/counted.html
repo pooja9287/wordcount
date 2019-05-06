@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> Counted</h1>
+     <h2> This is you entered text :- {{fulltext}}</h2> <br>
+     <h2> Total words are:- {{list_len}}</h2> <br>
+
+     {% for word.value in worddictionary %}
+     {{ word }} = {{ value }}
+     {% endfor %}
+
+
+  </body>
+</html>

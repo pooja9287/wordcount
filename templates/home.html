@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="homepage.css">
+    <style media="screen">
+      .jumbotron .container{
+        color:red;
+      }
+      body{
+        color:red;
+
+
+      }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="jumbotron" >
+      <div class="container" align=center >
+        <h1>Welcome to wordcount website</h1> <br><br>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">Home</button> &nbsp &nbsp &nbsp
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Count</button>  &nbsp &nbsp &nbsp
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Stories</button> &nbsp &nbsp &nbsp
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">Google</button> &nbsp &nbsp &nbsp
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Contact Us</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+
+      </div>
+
+    </div>
+
+    <h2>Count Here </h2> <br><br>
+    <form  action="{% url 'count'%}">
+      <textarea name="t1" rows="8" cols="80"></textarea>
+      <input type="submit" name="" value="count">
+
+    </form>
+
+
+
+
+  </body>
+</html>
